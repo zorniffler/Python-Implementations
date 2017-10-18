@@ -1,7 +1,6 @@
 import re
 
 # Abre archivo en modo lectura
-#archivo = open('MANN_a9.clq.txt','r')  
 archivo = open('MANN_a9.clq.txt','r')  
 
 
