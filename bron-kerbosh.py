@@ -3,7 +3,6 @@ import re
 # Abre archivo en modo lectura
 archivo = open('MANN_a9.clq.txt','r')  
 
-
 # Extraemos el tamaño del grafo del fichero.
 while True:
     linea = archivo.readline()
@@ -22,9 +21,7 @@ graph= [[]]
 graph = [[0 for j in range(size)] for i in range(size)]
 
 
-#archivo = open('MANN_a9.clq.txt','r')
 archivo = open('MANN_a9.clq.txt','r')
-
 
 # Obtencion del grafo para la estructura de datos DIMACS obtenida del fichero.
 # Inicia bucle infinito para leer línea a línea
@@ -40,11 +37,8 @@ while True:
         graph[int(linea[2]) - 1][int(linea[1]) - 1] = 1            
 archivo.close  # Cierra archivo
 
-
-
 # Representación del grafo como una lista de listas
 #graph = [[0,1,0,0,1,0],[1,0,1,0,1,0],[0,1,0,1,0,0],[0,0,1,0,1,1],[1,1,0,1,0,0],[0,0,0,1,0,0]]
-
 
 # Función que determina la obtención de los vecinos de un vertice.
 def Neighbours(vertex):
@@ -75,11 +69,3 @@ def bronk(r,p,x):
 
 def getBClique(cliques):
     return sorted(cliques, key=lambda clique: -len(clique))[0]
-
-        
-     
-    
-        
-
-
-
