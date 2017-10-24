@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from time import time
 
-
-
-
 # Funciones a testear.
 
 def Burbuja(a,n):
@@ -130,7 +127,6 @@ def AjusteSeleccionD():
     plt.show()
 
 
-
 def VisualizarTablasD():
 
     j = 0
@@ -144,8 +140,6 @@ def VisualizarTablasD():
         print('{:^20}{:^20}{:^20}{:^20}'.format(a,timesBD[j],timesID[j],timesSD[j]))
         j = j+1
         
-      
-
 
 def BurbujaD():
 
@@ -166,7 +160,6 @@ def BurbujaD():
         list1 = []
     return times[:]
     
-   
     
 def InsercionD():
 
@@ -186,7 +179,6 @@ def InsercionD():
         n = n+100
         list1 = []
     return times[:]
-
 
 
 def SeleccionD():
@@ -209,12 +201,10 @@ def SeleccionD():
     return times[:]
 
 
-
 ##################################################################
 
             # PRUEBAS DE ALGORITMOS CON ARRAYS INVERSOS
 ##################################################################
-
 
 timesBI = []
 timesII = []
@@ -237,7 +227,6 @@ def GraficasI():
 ###############################################################################
                     # AJUSTES A FUNCIÓN
 ###############################################################################    
-    
     
 def AjusteBurbujaI():
     
@@ -284,7 +273,6 @@ def AjusteInsercionI():
     plt.show()
     
     
-    
 def AjusteSeleccionI():
     
     x = []
@@ -309,7 +297,6 @@ def AjusteSeleccionI():
     plt.show()
     
     
-
 def VisualizarTablasI():
     j = 0
   
@@ -324,7 +311,7 @@ def VisualizarTablasI():
         print('{:^30}{:^30}{:^30}{:^30}'.format(a,timesBI[j],timesII[j],timesSI[j]))
         j = j+1
         
-
+        
 def BurbujaI():
     # Variable previas.
     times = []
@@ -384,14 +371,10 @@ def SeleccionI():
     return times[:]    
     
 
-
 ##################################################################
 
             # PRUEBAS DE ALGORITMOS CON ARRAYS ALEATORIOS
 ##################################################################
-
-
-
 
 def RandomExperiment():
 
@@ -399,7 +382,6 @@ def RandomExperiment():
     list1 = []
     n = 100
     
-
     # Semilla fija para generación similar.
     random.seed(1)
     timeBR = []
@@ -434,20 +416,17 @@ def RandomExperiment():
     times.append(timeIR)
     times.append(timeSR)
     return times[:]              
-            
-        
+               
 ##################################################################
 
             # PRUEBAS DE ALGORITMOS CON ARRAYS INVERSOS
 ##################################################################
-
 
 timesBR = []
 timesIR = []
 timesSR = []
 
 def GraficasR():
-    
     
     times = RandomExperiment()
     timesBR = times[0] 
@@ -463,9 +442,8 @@ def GraficasR():
     plt.show()
 
 def VisualizarTablasR():
-
+    
     j = 0
-  
     times = RandomExperiment()
     timesBR = times[0] 
     timesIR = times[1]
@@ -478,8 +456,6 @@ def VisualizarTablasR():
         print('{:^30}{:^30}{:^30}{:^30}'.format(a,timesBR[j],timesIR[j],timesSR[j]))
         j = j+1
 
-
-    
 ###############################################################################
                     # AJUSTES A FUNCIÓN
 ###############################################################################    
@@ -510,6 +486,7 @@ def AjusteBurbujaR():
     
     
 def AjusteInsercionR():
+    
     times = RandomExperiment()
     y = times[1] 
     
@@ -555,19 +532,3 @@ def AjusteSeleccionR():
     plt.legend(loc="upper left")
     plt.show()
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
